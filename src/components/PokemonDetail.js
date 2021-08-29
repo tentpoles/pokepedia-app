@@ -293,10 +293,12 @@ const PokemonImage = styled.div`
 `;
 
 const ModalContainer = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
 `; 
 
 const FormContainer = styled.div`
@@ -508,7 +510,8 @@ const PokemonDetail = ({match}) => {
           <Header>
             <BigImage>
               <img src={pokemon.sprites.other.dream_world.front_default} alt="" className='animate__animated animate__backInUp'/>
-            </BigImage><Thumbnail>
+            </BigImage>
+            <Thumbnail>
               <ImgThumbnail className="animate__animated animate__backInUp animate__delay-1s animate__fast">
                 <ImgContainer>
                   <img src={pokemon.sprites.front_default} alt="" />
