@@ -15,8 +15,8 @@ const SupportedBy = styled.div`
     align-items: center;
     justify-content: center;
     padding: 92px 24px;
-    gap: 32px;
     img {
+        margin: 16px;
         transition: all .5s ease;
         height: 72px;
         width: auto;

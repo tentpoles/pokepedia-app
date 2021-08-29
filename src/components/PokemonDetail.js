@@ -93,8 +93,8 @@ const Detail = styled.section`
 const DetailGroup = styled.div`
   display: flex;
   align-items: center;
-  gap: 8px;
   justify-content: center;
+  flex-wrap: wrap;
 `;
 
 const PokemonName = styled.h1`
@@ -102,6 +102,7 @@ const PokemonName = styled.h1`
   letter-spacing: 0.2mm;
   font-weight: var(--font-bold);
   text-transform: capitalize;
+  margin: 8px;
 `;
 
 const PokemonType = styled.h2`
@@ -137,6 +138,7 @@ const StatContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  white-space: nowrap;
 `;
 
 const StatPercentage = styled.div`
@@ -145,6 +147,7 @@ const StatPercentage = styled.div`
   height: 80px;
   border-radius: 50%;
   border: 6px solid currentColor;
+  white-space: nowrap;
   &::before {
     content: "";
     position: absolute;
@@ -171,6 +174,7 @@ const StatValue = styled.p`
 const StatDescription = styled.h3`
   margin-top: 12px;
   font-size: 14px;
+  white-space: nowrap;
   color: var(--primary-text-color);
   letter-spacing: 0.2mm;
 `;
@@ -180,11 +184,13 @@ const PokemonMoves = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  white-space: nowrap;
 `;
 
 const MoveName = styled.h4`
   display: inline-block;
   font-size: 14px;
+  white-space: nowrap;
   margin: 6px;
   letter-spacing: 0.1mm;
   padding: 3px 8px 5px 8px;
