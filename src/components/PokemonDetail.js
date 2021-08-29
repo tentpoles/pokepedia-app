@@ -153,6 +153,9 @@ const StatContainer = styled.div`
   flex-direction: column;
   align-items: center;
   white-space: nowrap;
+  @media (max-width: 940px) {
+    margin: 12px 6px;
+  }
 `;
 
 const StatPercentage = styled.div`
