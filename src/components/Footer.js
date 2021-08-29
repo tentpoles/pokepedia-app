@@ -28,6 +28,7 @@ const SupportedBy = styled.div`
         @media (max-width: 660px) {
             height: 50px;
             width: auto;
+            margin: 8px;
         }
     }
 `;
