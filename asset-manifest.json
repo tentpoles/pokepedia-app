@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pokepedia-app/static/css/main.1e0eaf5b.chunk.css",
-    "main.js": "/pokepedia-app/static/js/main.44039724.chunk.js",
-    "main.js.map": "/pokepedia-app/static/js/main.44039724.chunk.js.map",
+    "main.js": "/pokepedia-app/static/js/main.69f78375.chunk.js",
+    "main.js.map": "/pokepedia-app/static/js/main.69f78375.chunk.js.map",
     "runtime-main.js": "/pokepedia-app/static/js/runtime-main.2b8e2d45.js",
     "runtime-main.js.map": "/pokepedia-app/static/js/runtime-main.2b8e2d45.js.map",
     "static/js/2.bd8b3d33.chunk.js": "/pokepedia-app/static/js/2.bd8b3d33.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.2b8e2d45.js",
     "static/js/2.bd8b3d33.chunk.js",
     "static/css/main.1e0eaf5b.chunk.css",
-    "static/js/main.44039724.chunk.js"
+    "static/js/main.69f78375.chunk.js"
   ]
 }
