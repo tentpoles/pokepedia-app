@@ -16,9 +16,10 @@ const App = () => {
       <MyPokeListProvider>
         <Navigation />
         <Switch>
-          <Route path='/pokemon/:name' exact component={ PokemonDetail }></Route>
-          <Route path='/my-pokemon-list' exact component={ MyPokemonList }></Route>
-          <Route path='/' component={ Home }></Route>
+          <Route path='/pokepedia/pokemon/:name' exact component={ PokemonDetail }></Route>
+          <Route path='/pokepedia/my-pokemon-list' exact component={ MyPokemonList }></Route>
+          <Route path='/pokepedia/' component={ Home }></Route>
+          <Route component={ NotFound }></Route>
         </Switch>
       </MyPokeListProvider>
     </Router>

@@ -135,7 +135,7 @@ const PokemonCard = () => {
 
             <CardWrapper>
               {allPokemons.map( (getPokemon, index) =>
-                <Link to={`/pokemon/${getPokemon.name}`} key={index} className={`poke-card animate__animated animate__bounceInUp ${getPokemon.types[0].type.name}`}> 
+                <Link to={`/pokepedia/pokemon/${getPokemon.name}`} key={index} className={`poke-card animate__animated animate__bounceInUp ${getPokemon.types[0].type.name}`}> 
                   <PokeStats>
                     <PokeType className={`text-${getPokemon.types[0].type.name}`}>{getPokemon.types[0].type.name}</PokeType>
                     <PokeName>{getPokemon.name}</PokeName>

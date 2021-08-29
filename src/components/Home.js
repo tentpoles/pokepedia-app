@@ -153,7 +153,7 @@ const Home = () => {
                   /* Form validation */
                   validLength ? 
 
-                  <Link to={`/pokemon/${pokemonName}`}>
+                  <Link to={`/pokepedia/pokemon/${pokemonName}`}>
                     <SearchButton>Search</SearchButton>
                   </Link>
 

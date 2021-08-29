@@ -74,10 +74,10 @@ const Navigation = () => {
     return (
       <Header>
         <Navbar>
-            <Link to='/'>
+            <Link to='/pokepedia/'>
                 <NavLink><img src={ logo } alt="" /></NavLink>
             </Link>
-            <Link to='/my-pokemon-list'>
+            <Link to='/pokepedia/my-pokemon-list'>
                 <NavLink className='navlink-right'>
                     <PokeListLarge>My Pokemon List</PokeListLarge>
                     <PokeListSmall>My Poke</PokeListSmall>
