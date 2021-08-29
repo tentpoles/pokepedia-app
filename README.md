@@ -1,4 +1,4 @@
-#Pokepedia (ReactApp with PokeAPI) 
+# Pokepedia (ReactApp with PokeAPI) 
 
 Demo Link: https://tentpoles.github.io/pokepedia-app/
 
