@@ -7,7 +7,7 @@ import '../assets/animate.css';
 const PokemonList = styled.div`
   background: var(--white-color);
   position: relative;
-  padding: 30px 0;
+  padding: 36px 0;
   min-height: 400px;
   overflow-y: hidden;
 `;
@@ -67,7 +67,8 @@ const ArrowRight = styled.i`
 const ButtonWrapper = styled.div`
   width: 100%;
   overflow-y: hidden;
-  padding: 42px 24px  0 24px;
+  padding: 0 24px  0 24px;
+  margin-top: 12px;
 `;
 
 const LoadMore = styled.div`

@@ -39,16 +39,18 @@ const FooterContainer = styled.footer`
 
 const MyFooter = styled.div`
     max-width: 1080px;
-    padding: 24px;
+    padding: 20px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     letter-spacing: 0.2mm;
+    flex-wrap: wrap;
 `;
 
 const MyName = styled.h2`
     font-size: 14px;
+    margin: 4px;
     @media (max-width: 380px) {
         font-size: 12px;
     }
@@ -57,10 +59,11 @@ const MyName = styled.h2`
 const MySocial = styled.div`
     display: flex;
     align-items: center;
-    gap: 6px;
+    flex-wrap: wrap;
     a {
         transition: all .25s ease;
         text-decoration: none;
+        margin: 4px;
         color: var(--primary-text-color);
         &:hover {
             color: #000;

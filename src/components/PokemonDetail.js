@@ -22,6 +22,9 @@ const Header = styled.div`
   @media (max-width: 600px) {
     padding: 52px 24px 112px 24px;
   }
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 const BigImage = styled.div`
@@ -39,11 +42,18 @@ const BigImage = styled.div`
   @media (max-width: 600px) {
     margin-right: 32px;
   }
+  @media (max-width: 480px) {
+    margin-right: 0;
+  }
 `;
 
 const Thumbnail = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 480px) {
+    margin-top: 32px;
+    flex-direction: row;
+  }
 `;
 
 const ImgThumbnail = styled.div`
@@ -207,6 +217,10 @@ const PokeBall = styled.div`
     cursor: pointer;
     height: 80px;
     width: auto;
+    @media (max-width: 480px) {
+      height: 72px;
+      width: auto;
+    }
   }
   &:hover > div {
     opacity: 1;
@@ -263,8 +277,13 @@ const PokemonImage = styled.div`
     height: auto;
     position: relative;
     margin-bottom: 56px;
-    @media (max-width: 380px){
+    @media (max-width: 540px){
       margin-bottom: 32px;
+    }
+    @media (max-width: 380px){
+      margin-bottom: 24px;
+      width: 140px;
+      height: auto;
     }
   }
 `;
@@ -284,7 +303,10 @@ const FormContainer = styled.div`
   @media (max-width: 480px) {
     width: 360px;
   }
-  @media (max-width: 380px) {
+  @media (max-width: 420px) {
+    width: 320px;
+  }
+  @media (max-width: 360px) {
     width: 280px;
   }
 `; 
