@@ -22,10 +22,10 @@ const MyPokeList = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 42px;
 `;
 
 const MyPokemon = styled.div`
+  margin: 21px;
   display: flex;
   flex-basis: 150px;
   align-items: center;

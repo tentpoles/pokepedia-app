@@ -76,6 +76,7 @@ body {
   height: 200px;
   overflow: hidden;
   transition: all .25s ease;
+  margin: 12px;
 }
 
 .poke-card:hover {

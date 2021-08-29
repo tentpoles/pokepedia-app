@@ -17,11 +17,9 @@ const Header = styled.div`
   padding: 72px 24px 132px 24px;
   margin: 0 auto;
   display: flex;
-  gap: 64px;
   align-items: center;
   justify-content: center;
   @media (max-width: 600px) {
-    gap: 42px;
     padding: 52px 24px 112px 24px;
   }
 `;
@@ -29,6 +27,7 @@ const Header = styled.div`
 const BigImage = styled.div`
   flex-basis: auto;
   overflow: hidden;
+  margin-right: 64px;
   img {
     height: 340px;
     width: auto;
@@ -37,15 +36,18 @@ const BigImage = styled.div`
       width: auto;
     }
   }
+  @media (max-width: 600px) {
+    margin-right: 32px;
+  }
 `;
 
 const Thumbnail = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 12px;
 `;
 
 const ImgThumbnail = styled.div`
+  margin: 6px;
   background: var(--white-color);
   border-radius: 8px;
   overflow: hidden;
@@ -126,12 +128,12 @@ const PokemonStats = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  row-gap: 24px;
   flex-wrap: wrap;
 `;
 
 const StatContainer = styled.div`
-  width: 108px;
+  width: 90px;
+  margin: 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,12 +180,12 @@ const PokemonMoves = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
 `;
 
 const MoveName = styled.h4`
   display: inline-block;
   font-size: 14px;
+  margin: 6px;
   letter-spacing: 0.1mm;
   padding: 3px 8px 5px 8px;
   border: 2px solid currentColor;

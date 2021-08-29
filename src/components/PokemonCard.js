@@ -7,7 +7,7 @@ import '../assets/animate.css';
 const PokemonList = styled.div`
   background: var(--white-color);
   position: relative;
-  padding: 42px 0;
+  padding: 30px 0;
   min-height: 400px;
   overflow-y: hidden;
 `;
@@ -15,11 +15,10 @@ const PokemonList = styled.div`
 const CardWrapper = styled.div`
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 12px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 24px;
 `;
 
 const PokeStats = styled.div`
