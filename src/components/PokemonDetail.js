@@ -38,6 +38,10 @@ const BigImage = styled.div`
       height: 240px;
       width: auto;
     }
+    @media (max-width: 380px) {
+      height: 200px;
+      width: auto;
+    }
   }
   @media (max-width: 600px) {
     margin-right: 32px;
@@ -72,10 +76,10 @@ const ImgContainer = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60px;
+    width: 70px;
     height: auto;
     @media (max-width: 600px) {
-      width: 40px;
+      width: 50px;
       height: auto;
     }
   }

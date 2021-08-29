@@ -28,8 +28,16 @@ const SupportedBy = styled.div`
         @media (max-width: 660px) {
             height: 50px;
             width: auto;
-            margin: 8px;
+            margin: 12px;
         }
+        @media (max-width: 380px) {
+            height: 40px;
+            margin: 8px;
+            width: auto;
+        }
+    }
+    @media (max-width: 520px) {
+        padding: 64px 24px;
     }
 `;
 
