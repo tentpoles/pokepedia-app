@@ -1,0 +1,224 @@
+/* 
+
+Developed by Bhimo Al Kautsar
+----------------------------------------------------------
+
+Github: https://github.com/tentpoles
+Codepen: https://codepen.io/b-alkautsar 
+LinkedIn: https://www.linkedin.com/in/b-alkautsar
+Instagram: https://www.instagram.com/tentpolesman
+Direct Link: https://biolinky.co/alkautsar
+
+----------------------------------------------------------
+Test case purpose only
+
+*/
+
+/* CSS Master Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0; 
+  box-sizing: border-box;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+/* End */
+
+:root {
+  --primary-text-color: #555555;
+  --white-color: #fff;
+  --light-gray-color: #f3f2f0;
+  --green-color: #03ac0e;
+  --blue-color: #333bdd;
+  --orange-color: #f96004;
+  --red-color: #f42f25;
+  --font-medium: 300;
+  --font-regular: 500;
+  --font-bold: 700;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--white-color);
+  color: var(--primary-text-color);
+  font-family: 'Inter', sans-serif;
+  font-weight: var(--font-regular);
+}
+
+.navlink-right::before {
+  content: '';
+  position: absolute;
+  background: var(--orange-color);
+  width: 110%;
+  height: 4px;
+  bottom: -24px;
+  transition: all .25s ease;
+  transform: scaleX(0);
+}
+
+.navlink-right:hover::before {
+  transform: scaleX(1);
+}
+
+.poke-card {
+  flex: 1 0 240px;
+  position: relative;
+  border-radius: 12px;
+  height: 200px;
+  overflow: hidden;
+  transition: all .25s ease;
+}
+
+.poke-card:hover {
+  filter: grayscale(80%);
+  box-shadow: 
+    0 0 0 6px rgba(13, 19, 26, 0.1);
+}
+
+.poke-card:hover > div > i {
+  transform: translateX(0);
+}
+
+.input-pokemon-nickname {
+  width: 100%;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 18px 126px 18px 16px;
+  transition: all .5s ease;
+  border: 2px solid #c7c7c7;
+  color: var(--primary-text-color);
+  letter-spacing: 0.2mm;
+  background: var(--white-color);
+}
+
+.label-pokemon-nickname {
+  background: var(--white-color);
+  padding-inline: 6px;
+  transition: all .1s ease;
+  position: absolute;
+  top: 19px;
+  opacity: 0.6;
+  left: 12px;
+  letter-spacing: 0.2mm;
+  font-size: 14px;
+  cursor: text;
+}
+
+.input-pokemon-nickname:focus {
+  border: 2px solid var(--green-color);
+}
+
+.input-pokemon-nickname:focus + label,  .input-pokemon-nickname:valid + label{
+  top: -6px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+.input-pokemon-nickname:focus + label { color: var(--green-color); }
+
+/* Bouncing loader */
+.bouncing-loader {
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.ball-1, .ball-2, .ball-3 {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  margin: 4px;
+  transform-origin: 50% 100%;
+}
+
+.ball-1, .ball-2, .ball-3 {
+  animation: bouncingLoader 1s linear infinite;
+}
+
+.ball-1 { background: var(--red-color) }
+
+.ball-2 {
+  background: var(--orange-color);
+  animation-delay: 0.1s;
+}
+
+.ball-3 {
+  background: var(--blue-color);
+  animation-delay: 0.2s;
+}
+
+@keyframes bouncingLoader {
+  from, to {
+      transform: translateY(0) scale(1, 1);
+      animation-timing-function: ease-in;
+  }
+  45% {
+      transform: translateY(60px) scale(1, 1);
+      animation-timing-function: linear;
+  }
+  50% {
+      transform: translateY(60px) scale(1.5, 0.5);
+      animation-timing-function: linear;
+  }
+  55% {
+      transform: translateY(60px) scale(1, 1);
+      animation-timing-function: ease-out;
+  }
+}
+/* End */
+
+
+/* Pokemon Card Color by Type */
+.grass { background: #7ece34; }
+.fire { background: #ea5540; }
+.normal { background: #f0e78e; }
+.fighting { background: #d1b89d; }
+.flying { background: #007c36; }
+.poison { background: #695c97; }
+.ground { background: #a35615; }
+.rock { background: #717069; }
+.bug { background: #5dc1cf; }
+.ghost { background: #3e4e57; }
+.steel { background: #759ab5; }
+.water { background: #afcee5; }
+.electric { background:#ef8200; }
+.psychic { background: #815847; }
+.ice { background: #c6dcdb; }
+.dragon { background: #88a3d4; }
+.dark { background: #0d131a; }
+.fairy { background: #d7bdbc; }
+.unknown { background: #3e4e57; }
+.shadow { background: #0d131a; }
+
+.text-grass { color: #7ece34; }
+.text-fire { color: #ea5540; }
+.text-normal { color: #f0e78e; }
+.text-fighting { color: #d1b89d; }
+.text-flying { color: #007c36; }
+.text-poison { color: #695c97; }
+.text-ground { color: #a35615; }
+.text-rock { color: #717069; }
+.text-bug { color: #5dc1cf; }
+.text-ghost { color: #3e4e57; }
+.text-steel { color: #759ab5; }
+.text-water { color: #afcee5; }
+.text-electric { color:#ef8200; }
+.text-psychic { color: #815847; }
+.text-ice { color: #c6dcdb; }
+.text-dragon { color: #88a3d4; }
+.text-dark { color: #0d131a; }
+.text-fairy { color: #d7bdbc; }
+.text-unknown { color: #3e4e57; }
+.text-shadow { color: #0d131a; }
+/* End */
