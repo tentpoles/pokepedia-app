@@ -135,7 +135,7 @@ const MyPokemonList = () => {
                 return (
                   <MyPokemon key={index}>
                     <RoundBg className={`${getPokeDex.type} animate__animated animate__backInUp`}>
-                      <Link to={`/pokepedia/pokemon/${getPokeDex.name}`}>
+                      <Link to={`/pokemon/${getPokeDex.name}`}>
                         <ImgContainer>
                           <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${getPokeDex.pokeId}.svg`} className="animate__animated animate__bounceIn animate__delay-1s" alt="" title={`Visit ${getPokeDex.name} detail page.`} />
                         </ImgContainer>
