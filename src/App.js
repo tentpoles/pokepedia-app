@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
 import PokemonDetail from './components/PokemonDetail';
@@ -16,9 +16,9 @@ const App = () => {
       <MyPokeListProvider>
         <Navigation />
         <Switch>
-          <Route path='/pokemon/:name' exact component={ PokemonDetail }></Route>
-          <Route path='/my-pokemon-list' exact component={ MyPokemonList }></Route>
-          <Route path='/' exact component={ Home }></Route>
+          <Route path='/pokepedia-app/pokemon/:name' exact component={ PokemonDetail }></Route>
+          <Route path='/pokepedia-app/my-pokemon-list' exact component={ MyPokemonList }></Route>
+          <Route path='/pokepedia-app/' exact component={ Home }></Route>
           <Route component={ NotFound }></Route>
         </Switch>
       </MyPokeListProvider>
