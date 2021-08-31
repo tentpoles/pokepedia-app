@@ -225,3 +225,19 @@ body {
 .text-unknown { color: #3e4e57; }
 .text-shadow { color: #0d131a; }
 /* End */
+
+
+/* Window scrollbar costumize */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:  rgba(21, 20, 26, 0.25);
+  border-top: 12px solid transparent;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-bottom: 12px solid transparent;
+  background-clip: padding-box;
+}
+/* End */
