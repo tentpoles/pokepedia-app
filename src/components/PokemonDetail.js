@@ -266,10 +266,6 @@ const CatchTheBall = styled.div`
   }
 `;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> b92ed6c (First commit)
 const GivePokemonNickname = styled.div`
   position: fixed;
   top: 0;
@@ -277,13 +273,10 @@ const GivePokemonNickname = styled.div`
   height: 100vh;
   z-index: 999;
   background: rgba(13, 19, 26, 0.9);
-<<<<<<< HEAD
   overflow: hidden;
-=======
   ::-webkit-scrollbar {
     width: 0;
   }
->>>>>>> b92ed6c (First commit)
 `;
 
 const PokemonImage = styled.div`
@@ -313,15 +306,11 @@ const ModalContainer = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100vh;
-<<<<<<< HEAD
-  overflow: hidden;
-=======
   overflow: auto;
   padding: 52px 0;
   ::-webkit-scrollbar {
     width: 0;
   }
->>>>>>> b92ed6c (First commit)
 `; 
 
 const FormContainer = styled.div`
@@ -381,14 +370,11 @@ const FailedAlert = styled.div`
   img {
     margin-bottom: -20px;
     position: relative;
-    width: 240px;
+    width: 220px;
     height: auto;
     @media (max-width: 420px) {
-<<<<<<< HEAD
-      width: 180px;
-=======
+      margin-bottom: 0;
       width: 160px;
->>>>>>> b92ed6c (First commit)
       height: auto;
     }
   }
