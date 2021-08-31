@@ -5,7 +5,7 @@ import Home from './components/Home';
 import PokemonDetail from './components/PokemonDetail';
 import MyPokemonList from './components/MyPokemonList';
 import NotFound from './components/NotFound';
-import {MyPokeListProvider} from './context/MyPokemonListContext';
+import { MyPokeListProvider } from './context/MyPokemonListContext';
 import './assets/App.css';
 import './assets/animate.css';
 
