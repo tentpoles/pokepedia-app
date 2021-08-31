@@ -273,6 +273,7 @@ const GivePokemonNickname = styled.div`
   height: 100vh;
   z-index: 999;
   background: rgba(13, 19, 26, 0.9);
+  overflow: hidden;
 `;
 
 const PokemonImage = styled.div`
@@ -302,6 +303,7 @@ const ModalContainer = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 `; 
 
 const FormContainer = styled.div`
