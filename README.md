@@ -12,7 +12,7 @@ What you need:
 - "react-scripts": 4.0.3
 - "web-vitals": "^1.1.2
 
-Run start for the development mode, then listen to port on your browser
+Run start for the development mode, then listen to port on your browser (localhost:port/pokepedia-app/)
 ```html
   npm run start
 ```
