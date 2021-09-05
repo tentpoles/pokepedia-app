@@ -32,6 +32,12 @@ Test case purpose only
 }
 /* End */
 
+input[type=text] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 :root {
   --primary-text-color: #555555;
   --white-color: #fff;
