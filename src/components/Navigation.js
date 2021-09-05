@@ -7,8 +7,10 @@ import '../assets/App.css';
 import '../assets/animate.css';
 
 const Header = styled.header`
+    position: relative;
     background: var(--white-color);
-    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 999;
 `;
 
 const Navbar = styled.nav`

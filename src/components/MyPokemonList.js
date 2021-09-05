@@ -4,6 +4,8 @@ import styled from '@emotion/styled';
 import { MyPokemonListContext } from '../context/MyPokemonListContext';
 import '../assets/App.css';
 import '../assets/animate.css';
+import NoPokemonListImage from '../img/meowth.png';
+
 
 const MyPokeListContainer = styled.section`
   width: 100%;
@@ -100,13 +102,75 @@ const ReleasePokemonBtn = styled.span`
   }
 `;
 
-const NoPokemonList = styled.h1`
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: var(--font-bold);
-  font-size: 24px;
-  letter-spacing: 0.3mm;
-  color: var(--green-color);
+const NoPokemonList = styled.section`
+  width: 100%;
+  min-height: calc(100vh - 68px);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-gray-color);
+  overflow: hidden;
+  img {
+      margin: 0 auto;
+      width: 200px;
+      height: auto;
+      max-width: 100%;
+      @media (max-width: 440px) {
+        width: 140px;
+        height: auto;
+      }
+  }
+  h1 {
+      font-weight: var(--font-bold); 
+      font-size: 24px;
+      white-space: nowrap;
+      margin: 32px 0;
+      @media (max-width: 440px) {
+        max-width: 180px;
+        text-align: center;
+        font-size: 18px;
+        white-space: normal;
+      }
+  }
+  .btn-homepage {
+      background: var(--green-color);
+      padding: 12px 20px;
+      letter-spacing: 0.3mm;
+      border-radius: 6px;
+      font-weight: var(--font-bold);
+      font-size: 14px;
+      color: var(--white-color);
+      cursor: pointer;
+      transition: all .25s ease-in-out;
+      &:hover {
+        background: #03cb12;
+      }
+      @media (max-width: 440px) {
+        padding: 12px 16px;
+        letter-spacing: 0.3mm;
+        font-size: 12px;
+        white-space: nowrap;
+      }
+  }
+  .fa-long-arrow-alt-left {
+      animation: arrow-left .7s infinite;
+  }
+  @keyframes arrow-left {
+      0% {
+          transform: translateX(0);
+      }
+      25% {
+          transform: translateX(-3px);
+      }
+      25% {
+          transform: translateX(-5px);
+      }
+      75% {
+          transform: translateX(-3px);
+      }
+  }
 `;
 
 const MyPokemonList = () => {
@@ -135,7 +199,7 @@ const MyPokemonList = () => {
                 return (
                   <MyPokemon key={index}>
                     <RoundBg className={`${getPokeDex.type} animate__animated animate__backInUp`}>
-                      <Link to={`/pokemon/${getPokeDex.name}`}>
+                      <Link to={`/${getPokeDex.name}`}>
                         <ImgContainer>
                           <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${getPokeDex.pokeId}.svg`} className="animate__animated animate__bounceIn animate__delay-1s" alt="" title={`Visit ${getPokeDex.name} detail page.`} />
                         </ImgContainer>
@@ -160,9 +224,14 @@ const MyPokemonList = () => {
   else {
     return (
       <>
-        <MyPokeListContainer>
-          <NoPokemonList className='animate__animated animate__zoomInDown'>There's no pokemon <br /> in your list</NoPokemonList>
-        </MyPokeListContainer>
+        
+        <NoPokemonList>
+          <img src={NoPokemonListImage} alt="" className="animate__animated animate__zoomInDown" />
+          <h1 className="animate__animated animate__bounceIn animate__delay-2s">There's no pokemon in your list.</h1>
+          <Link to='/'>
+            <div className="btn-homepage animate__animated animate__bounceInUp animate__delay-1s"><i className="fas fa-long-arrow-alt-left"></i>&nbsp;&nbsp;LET'S CATCH</div>
+          </Link>
+        </NoPokemonList>
 
       </>
     )

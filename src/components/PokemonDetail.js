@@ -410,7 +410,7 @@ const TryAgainBtn = styled.button`
   border-radius: 3px;
   font-weight: var(--font-bold);
   letter-spacing: 0.3mm;
-  background: #fb741f;
+  background: var(--orange-color);
   color: var(--white-color);
   text-transform: uppercase;
   transition: all .5s ease;
@@ -418,7 +418,7 @@ const TryAgainBtn = styled.button`
   padding: 10px 14px;
   cursor: pointer;
   &:hover {
-    background: var(--orange-color);
+    background: #fb741f;
   }
 `;
 
