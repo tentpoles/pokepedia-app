@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/pokepedia-app/static/css/main.d6b63d9d.chunk.css",
-    "main.js": "/pokepedia-app/static/js/main.51d441cb.chunk.js",
-    "main.js.map": "/pokepedia-app/static/js/main.51d441cb.chunk.js.map",
+    "main.css": "/pokepedia-app/static/css/main.c2fee98f.chunk.css",
+    "main.js": "/pokepedia-app/static/js/main.978c9614.chunk.js",
+    "main.js.map": "/pokepedia-app/static/js/main.978c9614.chunk.js.map",
     "runtime-main.js": "/pokepedia-app/static/js/runtime-main.2b8e2d45.js",
     "runtime-main.js.map": "/pokepedia-app/static/js/runtime-main.2b8e2d45.js.map",
     "static/js/2.b161058a.chunk.js": "/pokepedia-app/static/js/2.b161058a.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.777fc8d4.chunk.js": "/pokepedia-app/static/js/3.777fc8d4.chunk.js",
     "static/js/3.777fc8d4.chunk.js.map": "/pokepedia-app/static/js/3.777fc8d4.chunk.js.map",
     "index.html": "/pokepedia-app/index.html",
-    "static/css/main.d6b63d9d.chunk.css.map": "/pokepedia-app/static/css/main.d6b63d9d.chunk.css.map",
+    "static/css/main.c2fee98f.chunk.css.map": "/pokepedia-app/static/css/main.c2fee98f.chunk.css.map",
     "static/js/2.b161058a.chunk.js.LICENSE.txt": "/pokepedia-app/static/js/2.b161058a.chunk.js.LICENSE.txt",
     "static/media/ach-ketchum.0b3e831c.png": "/pokepedia-app/static/media/ach-ketchum.0b3e831c.png",
     "static/media/meowth.6178a485.png": "/pokepedia-app/static/media/meowth.6178a485.png",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.2b8e2d45.js",
     "static/js/2.b161058a.chunk.js",
-    "static/css/main.d6b63d9d.chunk.css",
-    "static/js/main.51d441cb.chunk.js"
+    "static/css/main.c2fee98f.chunk.css",
+    "static/js/main.978c9614.chunk.js"
   ]
 }
