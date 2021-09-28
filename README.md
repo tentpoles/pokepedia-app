@@ -1,3 +1,4 @@
+[![Pokepedia App](https://firebasestorage.googleapis.com/v0/b/pokepedia-app.appspot.com/o/meta-og-image-min.jpeg?alt=media)](https://tentpoles.github.io/pokepedia-app/)
 ### Pokepedia (ReactApp with PokeAPI) 
 # :exclamation::exclamation::exclamation: This is README for Project Setup
 What you need:
